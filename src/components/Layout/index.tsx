@@ -1,14 +1,15 @@
-import { Grid } from './styles';
-import Header from '../Header';
-import Content from '../Content';
+import { Grid } from "./styles";
+import Header from "../Header";
+import Content from "../Content";
+import Bingo  from "../../pages/Bingo";
 
 const Layout = () => (
-  <Grid>
-    <Header />
-    <Content>
-      <h1>Ola</h1>
-    </Content>
-  </Grid>
+    <Grid>
+        <Header />
+        <Content>
+            <Bingo />
+        </Content>
+    </Grid>
 );
 
 export default Layout;
