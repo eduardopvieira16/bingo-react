@@ -1,5 +1,4 @@
 import {
-    Container,
     HeaderContainer,
     MenuContainer,
     MenuHistory,
@@ -10,17 +9,15 @@ import {
 
 const Header = () => {
     return (
-        <Container>
-            <HeaderContainer>
-                <Title>Bingo</Title>
-            </HeaderContainer>
+        <HeaderContainer>
+            <Title>Bingo</Title>
 
             <MenuContainer>
                 <MenuPlay>Jogar</MenuPlay>
                 <MenuHistory>Histórico</MenuHistory>
                 <MenuRestart>Recomeçar</MenuRestart>
             </MenuContainer>
-        </Container>
+        </HeaderContainer>
     );
 };
 

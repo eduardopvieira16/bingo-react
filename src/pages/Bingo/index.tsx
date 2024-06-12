@@ -7,15 +7,17 @@ import {
 } from "./styles";
 
 const MAX_NUMBER = 75;
-const DRAW_TIME_MS = 60000;
+const DRAW_TIME_MS = 50000;
 
 function Bingo() {
     const [drawnNumber, setDrawnNumber] = useState<number>(0);
     const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
     const drawNumber = () => {
-        const newDrawnNumber = Math.floor(Math.random() * MAX_NUMBER) + 1;
-        setDrawnNumber(newDrawnNumber);
+        if (drawnNumber === 0) {
+            const newDrawnNumber = Math.floor(Math.random() * MAX_NUMBER) + 1;
+            setDrawnNumber(newDrawnNumber);
+        }
     };
 
     const handlePlay = () => {
@@ -28,6 +30,7 @@ function Bingo() {
     };
 
     useEffect(() => {
+        handlePlay();
         return () => {
             if (timeoutId) clearTimeout(timeoutId);
         };

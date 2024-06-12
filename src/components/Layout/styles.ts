@@ -1,20 +1,26 @@
 import styled from "styled-components";
 
 export const Grid = styled.div`
-  /**
-  Layout template area
-  AS = Aside
-  HD = Header
-  CT = Content
-  */
-  display: grid;
-  grid-template-columns: 150px auto;
-  grid-template-rows: 50px auto;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas:
+        "HD HD"
+        "CT CT";
 
-  grid-template-areas:
-    "HD HD"
-    "CT CT";
+    height: 100%;
+    width: 100%;
 
-  height: 100vh;
-  min-width: 315px;
+    @media (max-width: 768px) {
+        grid-template-columns: 100px auto;
+        grid-template-rows: 50px auto;
+    }
+
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto;
+        grid-template-areas:
+            "HD"
+            "CT";
+    }
 `;
