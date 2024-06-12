@@ -16,25 +16,31 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html, body, #root {
+    height: 100%;
+  }
+
   body {
     background: var(--white);
     color: var(--black);
+    display: flex;
+    flex-direction: column;
   }
 
-  /*Responsividade de tela*/
+  /* Responsividade de tela */
   @media (max-width: 1080px) {
     html {
-        font-size: 93.75%;
+      font-size: 93.75%;
     }
   }
 
   @media (max-width: 720px) {
     html {
-        font-size: 87.5%;
+      font-size: 87.5%;
     }
   }
 
-  body,  input,  textarea,  button {
+  body, input, textarea, button {
     font: 700 1rem 'Harmattan', sans-serif;
   }
 

@@ -1,80 +1,81 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const HeaderContainer = styled.header`
     grid-area: HD;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    padding: 2rem 5rem;
-
+    padding: 1rem 2rem;
     background-color: var(--black);
-`;
 
-export const HeaderContainer = styled.header`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @media (max-width: 768px) {
+        padding: 1rem;
+        flex-direction: column;
+    }
 `;
 
 export const Title = styled.h2`
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-
-    margin-top: 0.3rem;
-    margin-bottom: 0.1rem;
-
     color: var(--white);
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+    }
 `;
 
 export const Button = styled.button`
-    width: 4%;
-    padding: 0.1rem;
-
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: bold;
-
     color: var(--red);
     background: var(--white);
     border: 1px solid var(--red);
     border-radius: 5px;
-
     transition: 0.15s;
 
     :hover {
         background: var(--red);
         color: var(--white);
     }
+
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+    }
 `;
 
 export const MenuContainer = styled.nav`
     display: flex;
     flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 `;
 
 export const MenuItemLink = styled.a`
     display: flex;
-
+    align-items: center;
     text-decoration: none;
-
-    margin: 10px 10px;
+    margin: 0.5rem;
     font-size: 0.8rem;
     font-weight: bold;
-    align-items: center;
-
     transition: opacity 0.3s;
-
     cursor: pointer;
+    color: var(--black);
 
     :hover {
         color: var(--white);
     }
+
+    @media (max-width: 768px) {
+        margin: 0.3rem 0;
+    }
 `;
 
 export const MenuPlay = styled(MenuItemLink)`
-    transition: opacity 0.3s;
-
     color: var(--green);
 
     :hover {
@@ -83,8 +84,6 @@ export const MenuPlay = styled(MenuItemLink)`
 `;
 
 export const MenuHistory = styled(MenuItemLink)`
-    transition: opacity 0.3s;
-
     color: var(--blue);
 
     :hover {
@@ -93,8 +92,6 @@ export const MenuHistory = styled(MenuItemLink)`
 `;
 
 export const MenuRestart = styled(MenuItemLink)`
-    transition: opacity 0.3s;
-
     color: var(--yellow);
 
     :hover {
