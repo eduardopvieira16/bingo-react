@@ -2,7 +2,7 @@
     <img src="public/img/main.png">
 </h1>
 
-<h1 align="center">
+<h1>
     <img src="public/img/video.gif">
 </h1>
 
