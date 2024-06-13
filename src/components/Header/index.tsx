@@ -1,9 +1,9 @@
 import {
     HeaderContainer,
-    MenuContainer,
+    /*     MenuContainer,
     MenuHistory,
     MenuPlay,
-    MenuRestart,
+    MenuRestart, */
     Title,
 } from "./styles";
 
@@ -12,11 +12,11 @@ const Header = () => {
         <HeaderContainer>
             <Title>Bingo</Title>
 
-            <MenuContainer>
+            {/* <MenuContainer>
                 <MenuPlay>Jogar</MenuPlay>
                 <MenuHistory>Histórico</MenuHistory>
                 <MenuRestart>Recomeçar</MenuRestart>
-            </MenuContainer>
+            </MenuContainer> */}
         </HeaderContainer>
     );
 };
