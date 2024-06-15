@@ -1,22 +1,6 @@
-<h1 align="center">
-    <img src="public/img/main.png">
-</h1>
-
 <h1>
     <img src="public/img/video.gif">
 </h1>
-
-# Indice
-
-- [Sobre](#-sobre)
-- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-- [Como baixar o projeto](#-como-baixar-o-projeto)
-
-## 🔖&nbsp; Sobre
-
-O projeto **Bingo** é um game de bingo para se divertir com os amigos e familiares. Projeto desenvolvido com intuito da prática da lógica de programação.
-
----
 
 ## 🚀 Tecnologias utilizadas
 
