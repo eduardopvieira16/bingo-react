@@ -1,9 +1,9 @@
 import { Grid } from "./styles";
 import Header from "../Header";
 import Content from "../Content";
-import Bingo  from "../../pages/Bingo";
+import Bingo from "../../pages/Bingo";
 
-const Layout = () => (
+const Layout: React.FC = () => (
     <Grid>
         <Header />
         <Content>
